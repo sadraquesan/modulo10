@@ -1,0 +1,58 @@
+
+/*configuração iniciais da pagina*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*Configuração do HEADER*/
+header {
+    background-color: #192a56;
+    padding-top: 16px 0;
+    color: #fff;
+}/*configuração do filho direto do reder*/
+header > .container {
+    display: flex;
+    justify-content: space-between;/*o texto fica na esquerda e o menu na direita*/
+    align-items: center; /*alinha o item  no centro entre uma linha e outra do container*/
+    padding-bottom: 16px;/*define altura da parde de baixo fica embranco.*/
+}
+/*configuração do nav*/
+nav {
+    background-color:#575fcf;
+    padding: 16px 0;
+}
+/*configuração do li do nav*/
+nav li {
+    list-style: none;/*tira os pontinho da lista*/
+    display: inline;/*mostra os itens um ao lado do outro*/
+    margin-right: 16px;/*separa os itens*/
+    font-size: 18px;/*tamanho da fonte*/
+    font-weight: bold;/*estilo da fonte*/
+    text-transform: uppercase;/*transforma a fonte em maiuscula*/
+}
+/*configuração das imagens*/
+nav li a{
+    color: #fff;/*cor do text*/
+    text-decoration: none;/*tira o sublinhado do link*/
+
+}
+/*configuração do humburge*/
+.menu-humburguer {
+    width: 32px;/*largura*/
+}
+/*configuração do humburguer*/
+.menu-humburguer span {
+    height: 2px; /*espessura das linhas*/
+    width: 100%;/*ocupa alargura de 100%*/
+    background-color: #fff; /*cor das linhas*/
+    display: block;/*exibe uma linha embaxo da oura*/
+    margin-bottom: 3px;/*espaço entres as linhas do humburguer*/
+}
