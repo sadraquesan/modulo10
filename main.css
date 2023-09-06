@@ -7,18 +7,33 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/*removendo a barra de rolagem da pagina*/
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: #c4c4df;
+}
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 /*Configuração do HEADER*/
-header {
-    background-color: #192a56;
-    padding-top: 16px 0;
+header, footer {
+    background-color: #6178b1;
+    padding-top: 16px;
     color: #fff;
-}/*configuração do filho direto do reder*/
-header > .container {
+}
+/*fanzendo com que o cabeçalho da pagina acompanhe a barra de rolage da pagian*/
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;/*possibilita que o carrocel nao suma ao rolar a pagina para baixo*/
+}
+/*configuração do filho direto do reder*/
+header > .container, footer > .container {
     display: flex;
     justify-content: space-between;/*o texto fica na esquerda e o menu na direita*/
     align-items: center; /*alinha o item  no centro entre uma linha e outra do container*/
@@ -26,8 +41,9 @@ header > .container {
 }
 /*configuração do nav*/
 nav {
-    background-color:#575fcf;
+    background-color:#5d64d1;
     padding: 16px 0;
+    display: none;/*nao exibe a barra logo de cara*/
 }
 /*configuração do li do nav*/
 nav li {
@@ -47,6 +63,7 @@ nav li a{
 /*configuração do humburge*/
 .menu-humburguer {
     width: 32px;/*largura*/
+    cursor: pointer;/*para mostrar ao usuario que esse menu é clicavel*/
 }
 /*configuração do humburguer*/
 .menu-humburguer span {
@@ -56,3 +73,113 @@ nav li a{
     display: block;/*exibe uma linha embaxo da oura*/
     margin-bottom: 3px;/*espaço entres as linhas do humburguer*/
 }
+.container-flex {
+    display: flex;
+}
+/*Diminuindo o tamanho na imagem da loja*/
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+/*inserindo espaço entre a image da lo e as imagens do carrocel
+sera um espaço de superior e iferio de 48px e 0 nas laterais*/
+section {
+    padding: 48px 0;
+}
+/*inserindo espaçamento em todos os h2 que esteja em todas as section*/
+section h2 {
+    margin-bottom: 16px;
+}/*espaçamento entre as imagens*/
+.lista-veiculos {
+    /*fazendo desta forma se precisar inserir algum outos elementos ai ficaria uma lacuna entre os elemantos que foram inserido
+    A melhor forma para inseri as margens no elementos seria criar uma class nos itens centrais.
+    */
+
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;/*quebra a linha*/
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;/*espaço inferior e superios dos elementos*/
+}
+
+/*impedindo que a imagem ultrapasse o container*/
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.itens-centrais {
+    margin: 0 5%;
+}
+
+/*configuração de todos os botoes*/
+button {
+    display: block;
+    width: 100%;/*vai ocupar 100% do container*/
+    padding: 8px 0;/*espaçamento interno de 8px no topo, embaxo e 0 nas laterais*/
+    border: none;/*as bordas nao seram exibidas*/
+    background-color: #797ece;/*cor do botao*/
+    color: #fff;/*cor do texto do botao*/
+    font-size: 16px;/*tamanho do texto*/
+    font-weight: bold;/*fonte sera em negrito*/
+    font-style: italic;/*estilo da fonte sera em italico*/
+    cursor: pointer; /*aparencia do mouse*/
+    border-radius: 6px;/*forma arredondada do botao*/
+}
+.price {
+    margin: 16px 0;/*espaçamento*/
+    display: block;/*exibi um item abaixo do outro*/
+}
+/*configuração de tag del*/
+.price del {
+    color: #6d6b6bde;
+    font-size: 14px;
+}
+
+/*configuração da sessão de contato*/
+.from-campo {
+    margin-bottom: 16px;/*espaçamento entre as linha dos elementos*/
+}
+
+.from-campo label {
+    font-weight: bold;
+    display: block;/*mostra os elementos um embaixo do outro*/
+}
+.from-campo input, .from-campo textarea {
+    width: 100%;/* vai ocupar toda parte do container*/
+    display: block;/*exibir os itens um em baixo do outro*/
+    padding: 8px;/*a altura dos inputs e textarea sera de 8px*/
+}
+
+.from-campo textarea {
+    resize: none;/*impedi que o usuarui redimencione a area da mensagenm*/
+    height: 120px;/*altura do textarea*/
+}
+/*tamanho maximo do campo textarea*/
+form {
+    max-width: 360px;
+}
+
+/*atribuido regras apenas para o botao enviar*/
+form button {
+    max-width: 120px;
+}
+
+/*configuração do roda pe */
+footer li {
+    list-style: none; /*tira as bolinahas da lista*/
+    margin-left: 16px;/*os elementos teram uma marge de 16px a esquerda*/
+}
+
+/*Altura da imagem*/
+footer li img {
+    height: 32px;/*altura da imagem*/
+}
+/*alinhando os icones do roda-pe*/
+

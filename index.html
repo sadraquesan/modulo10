@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrade Network</title>
+   <!--importação das fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family-Roboto:wght@400;700&display-swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins:wght@100&family=Roboto:wght@400;700&family=Smokum&family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+<!--carregando o css-->
     <link rel="stylesheet" href="main.css">
-    <!--CDN--> 
-   
+     <!--CDN--> 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
         
-        <div class="container"><!--este container é filho direto do header-->
-            <h1>AndradeNetwork</h1>
+        <div class="container container-flex"><!--este container é filho direto do header-->
+            <h1>AndradeNetwork Motors</h1>
             <!--Criando um hamburgue-->
             <div class="menu-humburguer">
                 <span></span>
@@ -45,11 +46,230 @@
             </div>
         </nav>
     </header>
+
     <div id="carousel-imagem">
         <img src="./slide1.png" alt="Carro da Porsche">
         <img src="./slide2.png" alt="Carro da BMW">
         <img src="./slide3.png" alt="Carro da Ford">
     </div>
+    <!--sessão1-->
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./loja.jpg" alt="imagem da loja">
+            <div>
+                <h2>Sobre a Empresa</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, laboriosam? Incidunt, dignissimos maiores quo aperiam alias voluptas porro perspiciatis illum dolor dolores quia itaque laudantium neque architecto id, quas dolorum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, laboriosam? Incidunt, dignissimos maiores quo aperiam alias voluptas porro perspiciatis illum dolor dolores quia itaque laudantium neque architecto id, quas dolorum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--sessao 2 onde ficarar os produtos em destaque-->
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <p class="price"><strong>R$: 100.00,00</strong></p>
+                    
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li class="itens-centrais">
+                    <img src="./fusca.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <p class="price"><strong>R$: 100.00,00</strong></p>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li>
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <p class="price"><strong>R$: 100.00,00</strong></p>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li>
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <p class="price"><strong>R$: 100.00,00</strong></p>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li class="itens-centrais">
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <p class="price"><strong>R$: 100.00,00</strong></p>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <!--Fim da sessao 2 destaque-->
+
+    <!--Sessão de Promoçoes-->
+
+    <section>
+        <div class="container">
+            <h2>Promoçoes</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                   <div class="price">
+                   <del> R$: 100.00,00</del><!--Efeito de riscado no navegador-->
+                    <strong>R$: 7500.00,00</strong>
+                   </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li class="itens-centrais">
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                   <div class="price">
+                   <del> R$: 100.00,00</del><!--Efeito de riscado no navegador-->
+                    <strong>R$: 7500.00,00</strong>
+                   </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li>
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                   <div class="price">
+                   <del> R$: 100.00,00</del><!--Efeito de riscado no navegador-->
+                    <strong>R$: 7500.00,00</strong>
+                   </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li>
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                   <div class="price">
+                   <del> R$: 100.00,00</del><!--Efeito de riscado no navegador-->
+                    <strong>R$: 7500.00,00</strong>
+                   </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+                <li class="itens-centrais">
+                    <img src="./carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                   <div class="price">
+                   <del> R$: 100.00,00</del><!--Efeito de riscado no navegador-->
+                    <strong>R$: 7500.00,00</strong>
+                   </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <!--fim da sessaõ de promoçoes-->
+
+    <!--sessão de cadastro-->
+    <section>
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="from-campo">
+                    <label for="name">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <!--telefone-->
+                <div class="from-campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone">
+                </div>
+                <!--email-->
+                <div class="from-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+                <!--Veiculo de interesse-->
+                <div class="from-campo">
+                    <label for="veiculi-interesse">Veiculo de interesse</label>
+                    <input type="text" id="veiculi-interesse">
+                </div>
+                    <!--Escrever mensagens ao usuario-->
+                <div class="from-campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem">Enviar</textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2023 &copy; AndradeNetwork Motors - Todoas os direitos reservados  
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./instagram.png" alt="instagram">
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./facebook.png" alt="facebook">
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./youtube.png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>-->
     <!--Slick: Plugn para criação do carrocel-->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -58,11 +278,20 @@
     <!--adicionando a CDN(sevidor de aquivos staticos que possibilita utilizar arquivos sem ter que baixar o arquivo)-->
 
     <!--execulta tudo que estiver aqui dentro depois que todo documento html estiver carregado-->
+    
     <script>
+        
         $(document).ready(function(){
-            $('#carousel-imagem').slick({
-            autoplay: true,})
+           
         });
+        //efeito carrocel
+        $("#carousel-imagem").slick({autoplay: true,});
+
+        //quando clicar no menu humburgue terao efeito do slide tangle se o nave nao estiver sendo exibido
+        $('.menu-humburguer').click(function() {
+            $('nav').slideToggle()});
+        
+
     </script>
 
 </body>
